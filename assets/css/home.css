@@ -1,3 +1,4 @@
+/* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 *{
     margin: 0;
@@ -9,11 +10,16 @@ body{
     font-family: 'Quicksand', sans-serif !important;
     width: 100%;
     height: 100%;
+    overflow-x: scroll;
 }
 h1,h2,h3,h4{
     font-family: inherit;
     font-size: 40px;
     line-height: 50px;
+}
+figure img{
+    width: 100% !important;
+    height: 90vh !important;
 }
 a{
     color: #ffffff !important;
@@ -23,7 +29,10 @@ a:hover{
     color: #000000 !important;
     text-decoration: none !important;
 }
-
+.fit {
+    max-width: 99% !important;
+    max-height: 99% !;
+}
 
 /* Nav */
 #nav{
@@ -81,39 +90,9 @@ a:hover{
     margin-right: 15px;
     opacity: 0.7;
 }
-/* .zuri-images{
-    
-}
-@keyframes zuriImages{
-    0%{right: -1109px; display: none;}
-    100%{right: 0; display: block;}
-} */
-#zuri-images1{
-    background: url(/Images/girlsmile.png) center center/cover no-repeat;
-}
-#zuri-images2{
-    background: url(/Images/girlfine.png)  center center/cover no-repeat;
-}
-#zuri-images3{
-    background: url(/Images/girlOnGlasses.png) center center/cover no-repeat;
-}
-@media screen and (max-width:1024px){
-    #nav h1{
-        margin: 95px 36px 130px;
-        font-size: 40px;
-        width: 160px;
-    }
-    #nav #nav-link-footer p{
-        padding: 5px;
-        font-size: 13px;
-        line-height: 15px;
-        margin-bottom: 12px;
-    }
-}
-@media screen and (max-width:768px){
-    #nav h1{
-        margin: 95px 15px 130px;
-        width: 120px;
-    }
-}
 
+@media screen and (max-width:768px){
+    .carousel-item img{
+        height: 200px !important;
+    }
+}
